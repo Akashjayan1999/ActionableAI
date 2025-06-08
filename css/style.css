@@ -572,30 +572,47 @@
   font-size: 26px;
   line-height: 34px;
   letter-spacing: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 
 .insights-section .view-button {
-  background-color: #00b899;
+  background-color: var(--secondry-index-color);
   color: #ffffff;
   padding: 0.6rem 1.5rem;
   border-radius: 25px;
   border: none;
-  cursor: pointer;
-  font-weight: bold;
-  align-self: center;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0;
+  align-self: start;
+  transition: all 0.3s ease;
+}
+
+.insights-section .view-button:hover {
+  background-color: var(--primary-index-color);;
+  /* color: var(--primary-index-color); */
+  /* border: 1px solid var(--secondry-index-color); */
 }
 
 .insights-section .read-more-button {
-  margin-top: 3rem;
+  margin-top: 5rem;
   background-color: #ffffff;
-  color: #003366;
-  padding: 0.7rem 1.8rem;
+  color: var(--primary-index-color);
+  padding: 1rem 1.8rem;
   border-radius: 25px;
-  font-size: 1rem;
   border: none;
   cursor: pointer;
-  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.insights-section .read-more-button:hover {
+  background-color: var(--secondry-index-color);
+  color:#fff;
 }
 @media (max-width: 1200px) {
   .insights-section h2 {
