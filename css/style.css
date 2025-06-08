@@ -19,7 +19,7 @@
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
   font-size: 62px;
-  line-height: 41px;
+  line-height: 69px;
   letter-spacing: 0;
   text-align: center;
   color: var(--secondry-index-color);
@@ -302,7 +302,7 @@
 }
 
 .features-wrapper .feature-card p {
-   font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 28px;
@@ -354,66 +354,105 @@
   }
 }
 
-
 /* AI Means Business section */
 .stats-section {
-      background-color: #004080;
-      color: #ffffff;
-      text-align: center;
-      padding: 3rem 1rem;
-      min-height: 55vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  background-color: #004080;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem;
+  min-height: 63vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-    .stats-section h2 {
-      font-size: 2rem;
-      color: #00bfa5; /* teal-like green */
-      margin-bottom: 1rem;
-    }
+.stats-section h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 38px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--secondry-index-color);
+  margin-bottom: 2.3rem;
+  position: relative;
+  top: 0px;
+}
 
-    .stats-section p.subheading {
-      font-size: 1.1rem;
-      margin-bottom: 2.5rem;
-    }
+.stats-section p.subheading {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
 
-    .stats-section .stats-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 3rem;
-    }
+.stats-section .stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
 
-    .stats-section .stat-box {
-      max-width: 250px;
-    }
+.stats-section .stat-box {
+  max-width: 270px;
+}
 
-    .stats-section .stat-box h3 {
-      font-size: 2rem;
-      margin-bottom: 0.25rem;
-    }
+.stats-section .stat-box h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 48px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
-    .stats-section .stat-box p.label {
-      font-size: 1rem;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-      color: #66ffe0; /* light teal */
-    }
+.stats-section .stat-box p.label {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--secondry-index-color); /* light teal */
+  margin-bottom: 0.5rem;
+}
 
-    .stats-section .stat-box p.description {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      color: #d0eaff;
-    }
+.stats-section .stat-box p.description {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+ 
+}
 
-    @media (max-width: 768px) {
-      .stats-section .stats-container {
-        flex-direction: column;
-        align-items: center;
-      }
 
-      .stats-section .stat-box {
-        margin-bottom: 2rem;
-      }
-    }
+@media (max-width: 1200px) {
+  .stats-section h2 {
+    top:0px;
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+@media (max-width: 768px) {
+  .stats-section .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-section h2 {
+    top:0px;
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .stats-section .stat-box {
+    margin-bottom: 2rem;
+  }
+}
