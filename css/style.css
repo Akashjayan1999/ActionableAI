@@ -354,7 +354,10 @@
   }
 }
 
+/* ------------------------------------------------ */
 /* AI Means Business section */
+/* ------------------------------------------------ */
+
 .stats-section {
   background-color: #004080;
   color: #ffffff;
@@ -429,13 +432,11 @@
   letter-spacing: 0;
   text-align: center;
   color: #fff;
- 
 }
-
 
 @media (max-width: 1200px) {
   .stats-section h2 {
-    top:0px;
+    top: 0px;
     font-size: 60px;
     line-height: 68px;
   }
@@ -447,12 +448,182 @@
   }
 
   .stats-section h2 {
-    top:0px;
+    top: 0px;
     font-size: 50px;
     line-height: 58px;
   }
 
   .stats-section .stat-box {
     margin-bottom: 2rem;
+  }
+}
+
+/* ------------------------------------------------ */
+/* Insights section */
+/* ------------------------------------------------ */
+
+.insights-section {
+  background-color: var(--primary-bg-color);
+  color: #ffffff;
+  padding: 0rem 1rem;
+  padding-bottom: 5rem;
+  min-height: 105vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insights-section h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 68px;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--secondry-index-color);
+  margin-bottom: 1rem;
+}
+
+.insights-section p.subheading {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+.insights-section .cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 2%;
+  /* max-width: 1200px; */
+}
+
+.insights-section .card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #003366;
+  max-width: 420px;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.insights-section .card img {
+  min-height: 180px;
+  padding: 0px 3%;
+  /* object-fit: cover; */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.insights-section .card-meta {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.insights-section .meta-box {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  color: #004080;
+  padding: 0rem 1rem;
+  border-radius: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 58px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.insights-section .meta-box i {
+  margin-right: 5px;
+  font-style: normal;
+}
+.insights-section .meta-box img{
+  width: 35px;
+  position:relative;
+  left:-10px;
+  max-height:50px;
+  min-height: 0px; 
+  padding: 0px 0%; 
+  object-fit: cover;
+  border-radius: 0rem;
+  margin-bottom: 0rem;
+}
+
+.insights-section .card-title {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 0;
+  margin-bottom: 2rem;
+}
+
+.insights-section .view-button {
+  background-color: #00b899;
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center;
+}
+
+.insights-section .read-more-button {
+  margin-top: 3rem;
+  background-color: #ffffff;
+  color: #003366;
+  padding: 0.7rem 1.8rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .insights-section h2 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+
+  .insights-section p.subheading {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insights-section h2 {
+    font-size: 50px;
+    line-height: 58px;
+  }
+  .insights-section .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .insights-section p.subheading {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .insights-section .card {
+    width: 90%;
   }
 }
