@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Varela+Round&display=swap");
+
+:root {
+  --orange: #d66e0c;
+  /* --primary-index-color: #143e68; */
+  --primary-index-color: #004487;
+  --secondry-index-color: #009588;
+  --primary-bg-color: #004487;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  background: linear-gradient(180deg, rgba(7, 162, 148, 0.81) 0%, #004487 100%);
+  color: white;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-section .hero-text {
+  max-width: 668px;
+  flex: 1 1 400px;
+}
+
+.hero-section .hero-text h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 71px;
+  letter-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .hero-text p {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.hero-section .hero-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .hero-image img {
+  /* width: 80%; */
+  scale: 1.1;
+  align-items: end;
+  /* max-width: 420px; */
+  /* border-radius: 0 32px 0 32px; */
+  /* object-fit: cover; */
+  fill: url(<path-to-image>) lightgray 0px -122.068px / 100% 270.8% no-repeat;
+}
+
+@media (max-width: 1300px) {
+  .hero-section .hero-text {
+    max-width: 750px;
+    flex: none;
+  }
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 9rem;
+    gap: 2rem;
+  }
+
+  .hero-section .hero-image {
+    margin-bottom: 4rem;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 58px;
+    line-height: 64px;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section .hero-text p {
+    padding-top: 2rem;
+    font-family: "Varela Round", sans-serif;
+    font-size: 18px;
+
+    line-height: normal;
+    color: #fff;
+  }
+
+  .hero-section .hero-image {
+    justify-content: center;
+  }
+  .hero-section .hero-image img {
+    scale: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-text h1 {
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section .hero-text p {
+    font-size: 15px;
+
+    line-height: normal;
+    color: #fff;
+  }
+}
+
+/* ------------------------------------------------- */
+/* Contact Section */
+/* ------------------------------------------------- */
+
+.contact-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-section .contact-card {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 2rem;
+  min-height:content;
+  padding: 6rem 4rem;
+  background: url("/images/contactbg.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+/* .contact-section .contact-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('/images/contactbg.png'); 
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.15;
+      pointer-events: none;
+    } */
+
+.contact-section .contact-card h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  z-index: 1;
+}
+
+.contact-section .contact-btn {
+  z-index: 1;
+ 
+  margin-top: 2rem;
+  background-color: var(--primary-index-color);
+  border:1px solid var(--primary-index-color);
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: #FFF;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+.contact-section .contact-btn:hover {
+  background-color: #fff;
+  color:var(--primary-index-color);
+  border:1px solid var(--primary-index-color);
+}
+
+@media (max-width: 768px) {
+  .contact-section .contact-card {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+  }
+
+  .contact-section .contact-card h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  z-index: 1;
+}
+}
+
+@media (max-width: 768px){
+   .contact-section .contact-card h2 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  z-index: 1;
+} 
+}
