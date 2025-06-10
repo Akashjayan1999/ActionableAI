@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Varela+Round&display=swap");
+
+:root {
+  --orange: #d66e0c;
+  /* --primary-index-color: #143e68; */
+  --primary-index-color: #004487;
+  --secondry-index-color: #009588;
+  --primary-bg-color: #004487;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100%;
+}
+   .contact-us-containers{
+    background-color: var(--primary-bg-color);
+    min-height: 105vh;
+    height:100%;
+   }
+
+    .contact-us-containers .contact-header {
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .contact-us-containers .contact-header h1 {
+      font-size: 2.5rem;
+    }
+
+    .contact-us-containers .contact-header h1 span {
+      color: #00a283;
+    }
+
+    .contact-us-containers .contact-header p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .contact-us-containers .form-container {
+      background-color: white;
+      color: black;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 900px;
+      margin: 40px auto;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-us-containers .form-control,
+    .contact-us-containers .form-select {
+      border-radius: 8px;
+    }
+
+    .contact-us-containers .btn-primary {
+      background-color: #0050c8;
+      border: none;
+      padding: 0.5rem 2rem;
+      border-radius: 25px;
+    }
+
+    .contact-us-containers .btn-primary:hover {
+      background-color: #003c99;
+    }
+
+    @media (max-width: 576px) {
+      .contact-us-containers .contact-header h1 {
+        font-size: 2rem;
+      }
+    }
