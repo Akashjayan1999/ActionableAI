@@ -292,7 +292,9 @@ body {
     text-align: center;
     border: none;
   }
-
+  .location-wrapper .location p{
+    text-align: center;
+  }
   .location-wrapper .contact-block {
     /* border-bottom: 1px solid #eaeaea; */
     flex: 1 1 171px;
@@ -312,7 +314,7 @@ body {
   }
 
   .location-wrapper .location p {
-    text-align: left;
+    text-align: center;
     padding-left: 1rem;
   }
 }
