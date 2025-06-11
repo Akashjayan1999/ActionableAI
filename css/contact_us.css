@@ -18,61 +18,191 @@ body {
 .contact-us-containers {
   background-color: var(--primary-bg-color);
   min-height: 105vh;
+  position: relative;
+}
+.contact-us-containers .btm-img {
+  position: absolute;
+  bottom: 0;
+  /* z-index:-1; */
+}
+.contact-us-containers .left-img {
+  position: absolute;
+  bottom: 0;
+  top:150px;
+  /* z-index:-1; */
 }
 
+.contact-us-containers .right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top:150px;
+  /* z-index:-1; */
+}
 .contact-us-containers .contact-header {
   padding-top: 12rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   text-align: center;
   /* margin-top: 60px; */
   /* margin-bottom: 20px; */
 }
 
 .contact-us-containers .contact-header h1 {
-  font-size: 2.5rem;
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 66px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .contact-us-containers .contact-header h1 span {
-  color: #00a283;
+  color: var(--secondry-index-color);
 }
 
 .contact-us-containers .contact-header p {
   max-width: 800px;
   margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  color: #fff;
+
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
 }
 
 .contact-us-containers .form-container {
-  background-color: white;
+  /* background-color: white; */
+  position: relative;
+  z-index: 1;
   color: black;
   padding: 2rem;
+  /* padding-top: 0; */
   border-radius: 10px;
-  max-width: 900px;
-  margin: 40px auto;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 50px auto;
+  margin-top: 0;
+  border-radius: 8px;
+  background: #fff;
+  /* box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.03); */
+}
+
+.contact-us-containers .form-container .form-label {
+  color: #5a7184;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .contact-us-containers .form-control,
 .contact-us-containers .form-select {
   border-radius: 8px;
+  border: 1px solid #c3cad9;
+  background: #fff;
+  height: 56px;
+}
+.contact-us-containers .form-container .form-control {
+  color: #959ead;
+
+  font-family: Quicksand;
+  font-size: 16px;
+}
+.contact-us-containers .text-form {
+  height: 137px;
 }
 
 .contact-us-containers .btn-primary {
-  background-color: #0050c8;
-  border: none;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--primary-bg-color);
+  /* border: none; */
   padding: 0.5rem 2rem;
   border-radius: 25px;
+  color: #fff;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .contact-us-containers .btn-primary:hover {
-  background-color: #003c99;
+  background-color: #fff;
+  color: var(--primary-bg-color);
+  border: 1px solid var(--primary-bg-color);
+}
+@media (max-width: 768px) {
+  .contact-us-containers .contact-header h1 {
+    font-size: 50px;
+  }
+  .contact-us-containers .contact-header p {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .contact-us-containers .left-img {
+  position: absolute;
+  bottom: 0;
+  top:90px;
+  scale: 0.7;
+  left:-50px;
+
+  /* z-index:-1; */
+}
+
+.contact-us-containers .right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top:90px;
+  scale: 0.7;
+  right:-50px;
+  /* z-index:-1; */
+}
 }
 
 @media (max-width: 576px) {
   .contact-us-containers .contact-header h1 {
-    font-size: 2rem;
+    font-size: 40px;
   }
+  .contact-us-containers .contact-header p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .contact-us-containers .left-img {
+  position: absolute;
+  bottom: 0;
+  top:-50px;
+  scale: 0.3;
+  left:-115px;
+
+  /* z-index:-1; */
+}
+
+.contact-us-containers .right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top:-50px;
+  scale: 0.3;
+  right:-115px;
+  /* z-index:-1; */
+}
+.contact-us-containers .form-container {
+  margin-top: 2.8rem;
+  margin-left: 2.8rem;
+  margin-right: 2.8rem;
+
+}
+.contact-us-containers .form-control,
+.contact-us-containers .form-select {
+  height:50px
+}
 }
 
 /* ------------------------------------------------- */
