@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aktionable.AI</title>
+    <!--Bootstrap css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/blog-intelligent.css" rel="stylesheet" />
+    <!-- <link href="css/generativeai.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+</head>
+
+<body class="home">
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-custom">
+            <div class="container-fluid navbar-content">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Aktionable.ai Logo" class="logo-img">
+                    <div class="brand-text">
+                        <div class="brand-main">A<div class="kt">kt</div>ionable Ai</div>
+                        <div class="brand-tagline">Smarter AI. Real Results</div>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12.593 23.258L12.582 23.26L12.511 23.295L12.491 23.299L12.477 23.295L12.406 23.26C12.3953 23.2567 12.3873 23.2583 12.382 23.265L12.378 23.275L12.361 23.703L12.366 23.723L12.376 23.736L12.48 23.81L12.495 23.814L12.507 23.81L12.611 23.736L12.623 23.72L12.627 23.703L12.61 23.276C12.6073 23.2653 12.6017 23.2593 12.593 23.258ZM12.858 23.145L12.845 23.147L12.66 23.24L12.65 23.25L12.647 23.261L12.665 23.691L12.67 23.703L12.678 23.71L12.879 23.803C12.8917 23.8063 12.9013 23.8037 12.908 23.795L12.912 23.781L12.878 23.167C12.8747 23.155 12.868 23.1477 12.858 23.145ZM12.143 23.147C12.1386 23.1443 12.1333 23.1435 12.1283 23.1446C12.1233 23.1457 12.1188 23.1487 12.116 23.153L12.11 23.167L12.076 23.781C12.0767 23.793 12.0823 23.801 12.093 23.805L12.108 23.803L12.309 23.71L12.319 23.702L12.323 23.691L12.34 23.261L12.337 23.249L12.327 23.239L12.143 23.147Z"
+                            fill="white" />
+                        <path
+                            d="M20 18C20.2549 18.0003 20.5 18.0979 20.6854 18.2728C20.8707 18.4478 20.9822 18.687 20.9972 18.9414C21.0121 19.1958 20.9293 19.4464 20.7657 19.6418C20.6021 19.8373 20.3701 19.9629 20.117 19.993L20 20H4C3.74512 19.9997 3.49997 19.9021 3.31463 19.7272C3.1293 19.5522 3.01777 19.313 3.00283 19.0586C2.98789 18.8042 3.07067 18.5536 3.23426 18.3582C3.39786 18.1627 3.6299 18.0371 3.883 18.007L4 18H20ZM20 11C20.2652 11 20.5196 11.1054 20.7071 11.2929C20.8946 11.4804 21 11.7348 21 12C21 12.2652 20.8946 12.5196 20.7071 12.7071C20.5196 12.8946 20.2652 13 20 13H4C3.73478 13 3.48043 12.8946 3.29289 12.7071C3.10536 12.5196 3 12.2652 3 12C3 11.7348 3.10536 11.4804 3.29289 11.2929C3.48043 11.1054 3.73478 11 4 11H20ZM20 4C20.2652 4 20.5196 4.10536 20.7071 4.29289C20.8946 4.48043 21 4.73478 21 5C21 5.26522 20.8946 5.51957 20.7071 5.70711C20.5196 5.89464 20.2652 6 20 6H4C3.73478 6 3.48043 5.89464 3.29289 5.70711C3.10536 5.51957 3 5.26522 3 5C3 4.73478 3.10536 4.48043 3.29289 4.29289C3.48043 4.10536 3.73478 4 4 4H20Z"
+                            fill="white" />
+                    </svg>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="platform.html">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solutions.html">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item dropdown display-small-none">
+                            <a class="nav-link dropdown-toggle" href="blog.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources
+                                <svg class="custom-dropdown-icon" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.99988 1.03325L7.9947 7.99483L14.9563 1.00001" stroke="#004487"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown display-lg-none">
+                            <a class="nav-link dropdown-toggle" href="contact-us.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                                <svg class="custom-dropdown-icon" width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.99988 1.03325L7.9947 7.99483L14.9563 1.00001" stroke="#004487"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="btn-login" href="#">Log In</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    Main Section
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -->
+    <section class="blog-hero-section intel-autom-chages">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <div class="badge">Blog</div>
+            <h1>Real-World AI: Success Stories Across Industries </h1>
+            <p>Artificial intelligence (AI) has moved beyond theoretical promise to deliver tangible impact across
+                diverse industries. From healthcare to retail, finance to manufacturing, AI is driving innovation,
+                efficiency, and customer satisfaction. </p>
+            <img src="images/dot.svg" alt="dot" />
+
+        </div>
+        <div class="author">
+            <div class="name">
+                <img src="images/name.svg" alt="Author" />
+
+                <strong>Luca Borroni</strong><br>
+            </div>
+            <div>
+                <span>March,17,2025</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    content Section
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -->
+    <div class="content-wrapper">
+        <div class="content-item">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="title">
+                        <h1>Healthcare: Revolutionizing Diagnostics and Patient Care </h1>
+                        <br />
+                        <p>AI is transforming healthcare by enhancing diagnostics, personalizing treatments, and streamlining operations. A standout example is “IBM Watson Health”, which has been used to assist oncologists in cancer treatment planning. By analyzing vast datasets of medical literature and patient records, Watson identifies personalized treatment options, reducing diagnosis times and improving outcomes. In one case, a hospital using Watson identified a rare leukemia subtype in a patient within minutes, a process that typically takes weeks, enabling faster treatment and better prognosis. </p>
+                        <br />
+                        <p>Another success is “Google Health’s DeepMind”, which developed an AI model to detect diabetic retinopathy from retinal scans with accuracy rivaling human specialists. Deployed in hospitals across India and the UK, this technology has screened thousands of patients, preventing vision loss by enabling early intervention. These examples demonstrate AI’s ability to enhance precision and accessibility in healthcare. </p>
+                        <br />
+                        <h2>Retail: Personalizing Customer Experiences </h2><br />
+                        <p>In retail, AI is redefining how businesses engage customers and optimize operations. “Amazon” is a pioneer, using AI-driven recommendation engines to personalize shopping experiences. By analyzing browsing history, purchase patterns, and preferences, Amazon’s algorithms suggest products with remarkable accuracy, driving over 35% of its revenue through recommendations. This personalization has boosted customer satisfaction and loyalty, setting a benchmark for the industry. 
+                        </p>
+                        <br />
+                        <p>Similarly, “Walmart” leverages AI to optimize inventory and supply chain management. Its AI system forecasts demand by analyzing historical sales, weather patterns, and local events, reducing overstock by 20% and minimizing waste. By integrating AI with real-time data, Walmart ensures shelves are stocked efficiently, enhancing customer experiences and cutting costs. </p>
+                        <br>
+                        <h2>Transportation: Streamlining Logistics and Autonomous Systems </h2><br />
+                        <p>In transportation, AI is enhancing logistics and paving the way for autonomous systems. “UPS” uses an AI-powered routing system called ORION (On-Road Integrated Optimization and Navigation) to optimize delivery routes. By analyzing traffic, weather, and package data, ORION has reduced delivery miles by over 100 million annually, saving fuel and cutting emissions. This efficiency has strengthened UPS’s operational resilience and sustainability. </p><br>
+                        <p>Meanwhile, “Tesla” continues to push boundaries with AI in autonomous driving. Its neural networks process data from cameras, radar, and sensors to enable features like Autopilot and Full Self-Driving. While still evolving, Tesla’s AI has logged billions of miles in real-world testing, improving safety and paving the way for fully autonomous vehicles. </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div>
+                        <img src="images/intel-auto-changes-content.svg" alt="content">
+                    </div>
+                    <h2 class="pt-5">Finance: Enhancing Fraud Detection and Customer Service </h2>
+                    <br />
+                    <p>The financial sector has embraced AI to combat fraud and improve service delivery. “JPMorgan Chase” uses an AI-powered system called COiN (Contract Intelligence) to analyze legal documents. Previously, reviewing 12,000 commercial contracts took 360,000 hours annually. COiN reduced this to seconds per document, saving millions in labor costs while minimizing errors. This efficiency allows the bank to focus on strategic initiatives. </p>
+                    <br>
+                    <p>
+                      in fraud detection, “Mastercard” employs AI to analyze billions of transactions in real time. Its machine learning models identify suspicious patterns, such as unusual spending behaviors, with 98% accuracy, preventing billions in fraudulent transactions annually. Additionally, AI-powered chatbots at banks like “Bank of America” (via its virtual assistant, Erica) handle millions of customer inquiries, from balance checks to financial advice, improving response times and customer satisfaction.  
+                    </p>
+                    <br>
+                    <h2>
+                      Manufacturing: Optimizing Production and Maintenance  
+                    </h2>
+                    <br />
+                    <p>
+                      AI is revolutionizing manufacturing by enabling predictive maintenance and process optimization. “Siemens” uses AI to monitor equipment health in its factories. By analyzing sensor data, AI predicts when machines are likely to fail, scheduling maintenance before breakdowns occur. This approach has reduced downtime by up to 30%, saving millions in production losses and extending equipment lifespans.   
+                    </p>
+                    <br>
+                    <p>
+                      “General Electric (GE)” has also seen success with its Predix platform, an AI-driven system that optimizes industrial processes. In one case, GE’s AI analyzed turbine performance data to improve energy efficiency in power plants, reducing fuel consumption by 5% and lowering emissions. These advancements highlight AI’s role in driving sustainability and cost-efficiency in manufacturing.   
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    footer Section
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------
+    -->
+    <div class="footer">
+        <footer class="footer-section">
+            <div class="curved-overlay"></div>
+            <div class="content-wrapper">
+                <div class="small-container">
+                    <div class="ms-md-5 hide-on-mobile">
+                        <!-- Upper Footer Columns - Platform and Solutions -->
+                        <div class="row  footer-columns justify-content-center ms-md-5">
+                            <div class="col-lg-2 col-md-6 mb-4">
+                                <div class="footer-column text-md-start text-center">
+                                    <h5>Platform</h5>
+                                    <ul>
+                                        <li><a href="#">AdoptIQ</a></li>
+                                        <li><a href="#">AssistIQ</a></li>
+                                        <li><a href="#">Contrakt AI</a></li>
+                                        <li><a href="#">MedUSA AI</a></li>
+                                        <li><a href="#">UnifyX</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="footer-column text-md-start text-center">
+                                    <h5>Solutions</h5>
+                                    <ul>
+                                        <li><a href="#">Banking & Finance</a></li>
+                                        <li><a href="#">Healthcare & Insurance</a></li>
+                                        <li><a href="#">Business & Legal</a></li>
+                                        <li><a href="#">Enterprise Operations</a></li>
+                                        <li><a href="#">Digital Adoption & Analytics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="footer-column text-md-start text-center">
+                                    <h5>Services</h5>
+                                    <ul>
+                                        <li><a href="#">AI Strategy & Advisory</a></li>
+                                        <li><a href="#">Solution Design & Prototyping</a></li>
+                                        <li><a href="#">Platform Implementation & Integration</a></li>
+                                        <li><a href="#">User Training & Change Management</a></li>
+                                        <li><a href="#">Ongoing Support & AI Governance</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 mb-4">
+                                <div class="footer-column last-item text-md-start text-center">
+                                    <h5>Resources</h5>
+                                    <ul>
+                                        <li><a href="#">
+                                                <h5>Privacy Policy</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Terms of Use</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Contact Us</h5>
+                                            </a></li>
+                                        <a href="#" class="login-btn">Log In</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ms-md-5 hide-on-lg">
+                        <div class="section-title text-center">Platform</div>
+                        <div class="row platform-grid">
+                            <div class="col-6 platform-item text-center">AdaptIQ</div>
+                            <div class="col-6 platform-item text-center">AssistIQ</div>
+                            <div class="col-6 platform-item text-center">ControlAI</div>
+                            <div class="col-6 platform-item text-center">MedLISA AI</div>
+                            <div class="col-12 platform-item text-center">MedLISA AI</div>
+                        </div>
+                        <div class="section-title pt-5 text-center">Solutions</div>
+                        <div class="row platform-grid">
+                            <div class="col-6 platform-item text-center">Banking & Finance</div>
+                            <div class="col-6 platform-item text-center">Healthcare & Insurance</div>
+                            <div class="col-6 platform-item text-center">Business & Legal</div>
+                            <div class="col-6 platform-item text-center">Enterprise Operations</div>
+                            <div class="col-12 platform-item text-center">Digital Adoption & Analytics</div>
+                        </div>
+                        <div class="section-title pt-5 text-center">Services</div>
+                        <div class="row platform-grid">
+                            <div class="col-12 platform-item text-center">AI Strategy & Advisory</div>
+                            <div class="col-12 platform-item text-center">Solution Design & Prototyping</div>
+                            <div class="col-12 platform-item text-center">Platform Implementation & Migration
+                            </div>
+                            <div class="col-12 platform-item text-center">User Training & Change Management
+                            </div>
+                            <div class="col-12 platform-item text-center">Ongoing Support & AI Governance</div>
+                        </div>
+                    </div>
+                    <!-- Logo and Description Section -->
+                    <div class="small-container small-container2">
+
+
+                        <div class="row">
+                            <div class="col-6 h-75 d-flex flex-column align-items-lg-start align-items-center">
+                                <div class="logo-section">
+                                    <a class="navbar-brand d-flex justify-content-md-start justify-content-center align-items-lg-end align-items-center"
+                                        href="#">
+                                        <img src="images/logo-large.png" alt="Aktionable.ai Logo" class="logo-img">
+                                        <div class="brand-text ">
+                                            <div class="brand-main">Aktionable Ai</div>
+                                            <div class="brand-tagline">Smarter AI. Real Results</div>
+                                        </div>
+                                    </a>
+                                    <div class="description">
+                                        Empowering businesses with actionable insights, intelligent automation,
+                                        and
+                                        real-world impact. Discover how our AI platform transforms data into
+                                        decisive
+                                        action.
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-6  right-section d-flex flex-column align-items-lg-start align-items-center  hide-on-flex">
+                                <div class="footer-column last-item text-md-start text-left">
+                                    <h5 class="ps-2">Resources</h5>
+                                    <ul>
+                                        <li><a href="#">
+                                                <h5>Privacy Policy</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Terms of Use</h5>
+                                            </a></li>
+                                        <li><a href="#">
+                                                <h5>Contact Us</h5>
+                                            </a></li>
+                                        <a href="#" class="login-btn">Log In</a>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Newsletter and Social Section -->
+                            <div
+                                class="small-container2  col-lg-5 d-flex flex-column align-items-lg-end align-items-start">
+                                <div>
+                                    <div class="newsletter-section pt-4">
+                                        <div class="newsletter-title">Subscribe to Our Smart Insights</div>
+                                        <div class="newsletter-form">
+                                            <input type="email" class="newsletter-input" placeholder="">
+                                            <button class="newsletter-btn">Send</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="social-links">
+                                        <a href="#" class="social-link">
+                                            <img src="images/socialmedia1.svg" alt="LinkedIn" class="social-icon">
+                                        </a>
+                                        <a href="#" class="social-link">
+                                            <img src="images/socialmedia2.svg" alt="LinkedIn" class="social-icon">
+                                        </a>
+                                        <a href="#" class="social-link">
+                                            <img src="images/socialmedia3.svg" alt="LinkedIn" class="social-icon">
+                                        </a>
+                                        <a href="#" class="social-link">
+                                            <img src="images/socialmedia4.svg" alt="LinkedIn" class="social-icon">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright -->
+                    <div class="row small-container">
+                        <div class="col-12 ">
+                            <div class="copyright text-lg-start text-center">
+                                2025 Aktionable Ai. A KT2i (Kanchi Technologies) Company | All Rights Reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

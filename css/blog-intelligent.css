@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Varela+Round&display=swap");
+
+:root {
+  --orange: #d66e0c;
+  /* --primary-index-color: #143e68; */
+  --primary-index-color: #004487;
+  --secondry-index-color: #009588;
+  --primary-bg-color: #004487;
+}
+/* ------------------------------------------------- */
+/* Main section */
+/* ------------------------------------------------- */
+.blog-hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: url("/images/blog-intelligentMain.jpg") no-repeat center
+    center/cover;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  padding: 60px 60px;
+}
+.intel-auto{
+   background: url("/images/intel-automation.svg") no-repeat center 
+}
+.intel-autom-chages{
+  background: url("/images/intel-automation-changes.svg") no-repeat center
+}
+
+.blog-hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%);
+  z-index: 1;
+}
+
+.blog-hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+}
+
+.blog-hero-section .badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  color: #fff;
+  border-radius: 20px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.blog-hero-section .hero-content h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0%;
+
+  margin-bottom: 25px;
+}
+
+.blog-hero-section .hero-content p {
+  font-family: Varela Round;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0%;
+
+  margin-bottom: 25px;
+}
+
+.blog-hero-section .author {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  /* float:right; */
+  width: 40%;
+  gap: 10px;
+}
+.blog-hero-section .author .name {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.blog-hero-section .author img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.blog-hero-section .author span {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+
+  color: #ddd;
+}
+
+@media (max-width: 768px) {
+
+  .blog-hero-section {
+        padding: 30px 20px;
+  }  
+  .blog-hero-section .author {
+    display: none;
+  }
+  .blog-hero-section .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .blog-hero-section .hero-content p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .blog-hero-section .hero-content h1 {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 42px;
+    letter-spacing: 0%;
+
+    margin-bottom: 25px;
+  }
+
+  .blog-hero-section .author .name {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+  .blog-hero-section .author span {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+/* ------------------------------------------------- */
+/* Content section */
+/* ------------------------------------------------- */
+
+.content-wrapper .content-item {
+  padding: 60px 60px;
+}
+
+.content-wrapper .title h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: 0%;
+}
+
+.content-wrapper p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper .title h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .content-wrapper p {
+    font-size: 16px;
+   line-height: 24px;
+  }
+}

@@ -22,8 +22,11 @@ body {
 }
 .contact-us-containers .btm-img {
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   /* z-index:-1; */
+}
+.contact-us-containers .btm-img img{
+  min-width: 100vw;
 }
 .contact-us-containers .left-img {
   position: absolute;
@@ -136,6 +139,12 @@ body {
   border: 1px solid var(--primary-bg-color);
 }
 @media (max-width: 768px) {
+
+  .contact-us-containers .btm-img {
+  position: absolute;
+  bottom: -1px;
+  /* z-index:-1; */
+}
   .contact-us-containers .contact-header h1 {
     font-size: 50px;
   }

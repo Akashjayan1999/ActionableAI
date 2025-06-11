@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Varela+Round&display=swap");
+
+:root {
+  --orange: #d66e0c;
+  /* --primary-index-color: #143e68; */
+  --primary-index-color: #004487;
+  --secondry-index-color: #009588;
+  --primary-bg-color: #004487;
+}
+
+/* ------------------------------------------------- */
+/* Main section */
+/* ------------------------------------------------- */
+
+.hero-container .content {
+  max-width: 900px;
+}
+
+.hero-container .sub-title {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 69px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-container .description {
+  color: #fff;
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.2rem;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .hero-container .sub-title {
+    font-size: 60px;
+    line-height: 58px;
+  }
+
+  .hero-container .description {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container .sub-title {
+    font-size: 50px;
+    line-height: 48px;
+  }
+
+  .content {
+    text-align: start !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: fit-content;
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------------- */
+/* Contact Section */
+/* ------------------------------------------------- */
+
+.contact-section {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.contact-section .contact-card {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 2rem;
+  min-height: content;
+  padding: 6rem 4rem;
+  background: url("/images/solutions-contact.svg");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-position: center;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+/* .contact-section .contact-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('/images/contactbg.png'); 
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.15;
+      pointer-events: none;
+    } */
+.contact-section .contact-card h2 {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0%;
+  margin-bottom: 3rem;
+}
+.contact-section .contact-card h3 {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 39px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  z-index: 1;
+}
+
+.contact-section .contact-btn {
+  z-index: 1;
+
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 0.4rem 1.5rem;
+  /* border: none; */
+  border-radius: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+}
+
+/* .contact-section .contact-btn:hover {
+  background-color: #fff;
+  color: var(--primary-index-color);
+  border: 1px solid var(--primary-index-color);
+} */
+
+@media (max-width: 768px) {
+  .contact-section .contact-card {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+  }
+
+  .contact-section .contact-card h2 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0%;
+    margin-bottom: 2rem;
+  }
+  .contact-section .contact-card h3 {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section .contact-card h2 {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    margin-bottom: 1.7rem;
+  }
+  .contact-section .contact-card h3 {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    z-index: 1;
+  }
+}
+
+/* ------------------------------------------------- */
+/* content Section */
+/* ------------------------------------------------- */
+
+.centered-text-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1rem 2rem 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.centered-text-section p {
+  font-family: "Quicksand", sans-serif; /* or a clean modern font like 'Open Sans' */
+  /* font-size: 20px; */
+  /* line-height: 1.6; */
+  color: #333; /* adjust based on your theme */
+}
+
+@media (max-width: 768px) {
+    .centered-text-section {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
