@@ -62,7 +62,7 @@
   fill: url(<path-to-image>) lightgray 0px -122.068px / 100% 270.8% no-repeat;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1100px) {
   .hero-section .hero-text {
     max-width: 750px;
     flex: none;
