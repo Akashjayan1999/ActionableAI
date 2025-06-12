@@ -562,7 +562,7 @@
 
 .insights-section .cards-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
   width: 100%;

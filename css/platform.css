@@ -79,7 +79,7 @@
 /* ------------------------------------------------- */
 .accelating-wrapper {
   background: #fff;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   /* padding: 60px 0; */
 }
 
@@ -388,6 +388,7 @@
   margin: auto;
   position: relative;
   padding: 50px;
+  padding-bottom: 0px;
 }
 
 .sticky-card-container .sticky-card {
@@ -396,7 +397,7 @@
   padding: 30px;
   border-radius: 20px;
   
-  min-height :600px;
+  min-height :450px;
   /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
   border: 2px solid var(--primary-bg-color);
   margin-bottom: 150px;
@@ -495,7 +496,7 @@ left: 760px;
 .sticky-card-container .card-content h5 {
   font-family: Varela Round;
 font-weight: 400;
-font-size: 40px;
+font-size: 50px;
 line-height: 100%;
 letter-spacing: 0%;
 color:var(--secondry-index-color);
@@ -504,7 +505,7 @@ color:var(--secondry-index-color);
 .sticky-card-container .card-content p {
   font-family: Quicksand;
 font-weight: 400;
-font-size: 18px;
+font-size: 22px;
 line-height: 141%;
 letter-spacing: 0%;
 color:var(--primary-index-color);
@@ -563,11 +564,11 @@ color:var(--primary-index-color);
   }
 
   .sticky-card-container .card-content h5 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .sticky-card-container .card-content p {
-    font-size: 17px;
+    font-size: 19px;
   }
 }
 
@@ -585,11 +586,11 @@ color:var(--primary-index-color);
   }
 
   .sticky-card-container .card-content h5 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .sticky-card-container .card-content p {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -605,11 +606,11 @@ color:var(--primary-index-color);
   }
 
   .sticky-card-container .card-content h5 {
-    font-size: 28px;
+    font-size: 29px;
   }
 
   .sticky-card-container .card-content p {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 

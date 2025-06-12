@@ -393,7 +393,7 @@ body {
   background-color: var(--primary-index-color);
   color: white;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
