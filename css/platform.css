@@ -165,7 +165,7 @@
 /* Modular wrapper section */
 /* ------------------------------------------------- */
 .modular-wrapper {
-  background: #cddaea;
+ background: #004487;
   padding: 5rem 1rem;
 }
 .modular-wrapper h2 {
@@ -178,7 +178,7 @@
   line-height: 68px; /* 65% */
 }
 .modular-wrapper .subheading {
-  color: #004487;
+  color: #fff;
 
   text-align: center;
   font-family: "Quicksand", sans-serif;
@@ -196,13 +196,13 @@
   border: 1px solid var(--primary-index-color);
   border-radius: 40px;
   padding: 20px;
-  background-color: transparent;
+  background-color: #fff;
   height: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 .modular-wrapper .icon-box img {
-  height: 40px;
+  height: 60px;
   margin-bottom: 15px;
 }
 .modular-wrapper .icon-box h5 {
