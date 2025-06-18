@@ -606,9 +606,8 @@ dropdown-toggle:hover .dropdown-menu {
 }
 @media (max-width: 1290px) and (min-width: 1000px) and (max-height: 850px) {
   .hero-container .content {
-   margin-top: 10rem;
-
-}
+    margin-top: 10rem;
+  }
 }
 
 /* -------------- */
@@ -622,8 +621,8 @@ dropdown-toggle:hover .dropdown-menu {
   min-height: 100vh;
   color: white;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer .footer-section::before {
@@ -1167,4 +1166,47 @@ dropdown-toggle:hover .dropdown-menu {
   .accelating-wrapper .hero-section {
     padding: 40px 0;
   }
+}
+
+/* ------------------------------------------------- */
+/* New footer section */
+/* ------------------------------------------------- */
+
+.footer {
+  background: linear-gradient(135deg, var(--primary-index-color), #052138);
+  color: white;
+  padding: 5rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+.footer .logo {
+  /* max-height: 60px; */
+}
+.footer .divider {
+  border-top: 1px solid #fff;
+  margin: 3rem 0;
+}
+.footer .privacy a {
+  color: white;
+  text-decoration: none;
+
+  font-family: Varela Round;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0%;
+}
+.footer .linkedin-icon {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+.footer-text {
+  font-family: Varela Round;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0%;
+}
+
+.footer .logo-image-social {
+  margin-top: -6px;
 }
