@@ -13,7 +13,7 @@
 .blog-hero-section {
   position: relative;
   min-height: 100vh;
-  background: url("/images/blog-intelligentMain.jpg") no-repeat center
+  background: url("/images/blog-intelligentMain\ \(1\).jpg") no-repeat center
     center/cover;
   color: white;
   display: flex;
